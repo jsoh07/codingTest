@@ -3,10 +3,10 @@ function solution(arr1, arr2) {
     const arr2Sum = arr2.reduce((acc, curr) => acc + curr);
     
     if(arr1.length < arr2.length) return -1;
-    else if(arr1.length > arr2.length) return 1;
+    if(arr1.length > arr2.length) return 1;
     
     if(arr1Sum < arr2Sum) return -1;
-    else if(arr1Sum > arr2Sum) return 1;
+    if(arr1Sum > arr2Sum) return 1;
     
     return 0;
 }   
