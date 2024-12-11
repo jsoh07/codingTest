@@ -4,4 +4,7 @@ function solution(my_string, index_list) {
         result+=my_string[index_list[i]];
     }
     return result;
+
+    // 더 간단한 풀이
+    // return index_list.map(x => my_string[x]).join('');
 }
